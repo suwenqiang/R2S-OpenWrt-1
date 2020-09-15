@@ -11,6 +11,15 @@ sed -i '/PREEMPT/d' ./target/linux/rockchip/armv8/config-5.4
 echo '
 CONFIG_PREEMPT_RT=y
 CONFIG_PREEMPTION=y
+CONFIG_USB_SERIAL=y
+CONFIG_USB_SERIAL_GENERIC=y
+CONFIG_USB_SERIAL_CH341=y
+CONFIG_USB_SERIAL_CP210X=y
+CONFIG_USB_SERIAL_FTDI_SIO=y
+CONFIG_USB_SERIAL_PL2303=y
+CONFIG_USB_SERIAL_QUALCOMM=y
+CONFIG_USB_SERIAL_WWAN=y
+CONFIG_USB_SERIAL_OPTION=y
 ' >> ./target/linux/rockchip/armv8/config-5.4
 sed -i '/PREEMPT/d' ./target/linux/rockchip/config-default
 echo '
