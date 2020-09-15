@@ -41,7 +41,7 @@ wget https://raw.githubusercontent.com/nicksun98/openwrt/openwrt-19.07/feeds.con
 wget -P include/ https://raw.githubusercontent.com/openwrt/openwrt/openwrt-19.07/include/scons.mk
 patch -p1 < ../PATCH/new/main/0001-tools-add-upx-ucl-support.patch
 #SWAP LAN WAN
-#patch -p1 < ../PATCH/new/main/0001-target-rockchip-swap-nanopi-r2s-lan-wan-port.patch
+patch -p1 < ../PATCH/new/main/0001-target-rockchip-swap-nanopi-r2s-lan-wan-port.patch
 #remove annoying snapshot tag
 sed -i 's,SNAPSHOT,,g' include/version.mk
 sed -i 's,snapshots,,g' package/base-files/image-config.in
